@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main id="head">
+        <img class="main_img" src="wok.jpg" alt="bg-image">
+        <div class="title">
+            <h1 class="c_header">TODO</h1>
+            <h2 class="c_time"" id="time"></h2>
+            <form class="c_task_form" id="task_form">
+                <input type="text" id="add_task"  placeholder="Write a Task">
+                <input type="submit" id="sub_task" value="Add Task">
+            </form>
+        </div>
+    </main>
+
+    <section id="mid">
+        <h2 class="all_task">All Tasks</h2>
+        <div id="todolist">
+        <div class="entryDiv">
+        <div class="data">
+            <input type="text" class="inp" value="task zero" readonly>
+        </div>
+        <div class="btns">
+            <input type="checkbox">
+            <button class="edit">EDIT</button>
+            <button class="delete">DELETE</button>
+        </div>
+        </div> 
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
