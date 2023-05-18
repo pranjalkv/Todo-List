@@ -41,10 +41,12 @@ formid.addEventListener("submit", (e) => {
 
  		let edit_btn = document.createElement("button")
  		edit_btn.classList.add("edit")
+		edit_btn.classList.add("btn")
 		edit_btn.innerHTML="EDIT"
 
  		let del_btn = document.createElement("button")
  		del_btn.classList.add("delete")
+		del_btn.classList.add("btn")
 		del_btn.innerHTML="DELETE"
 
  		todo_btn.appendChild(edit_btn)
@@ -59,10 +61,14 @@ formid.addEventListener("submit", (e) => {
 			if(chk_btn.checked==true)
 			{
 			todo_input.classList.add("cut")
+			edit_btn.innerHTML="DONE";
+			edit_btn.setAttribute("disabled","disabled")
 			}
 			else
 			{
 			todo_input.classList.remove("cut")
+			edit_btn.innerHTML="EDIT"
+			edit_btn.removeAttribute("disabled")
 			}
 		})
 		edit_btn.addEventListener("click",()=>
@@ -82,7 +88,6 @@ formid.addEventListener("submit", (e) => {
 
 		del_btn.addEventListener("click",()=>
 		{
-
 			adder.removeChild(topDiv)
 		})
 

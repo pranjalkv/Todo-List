@@ -17,33 +17,34 @@
 </head>
 
 <body>
+    <center><h1 class="c_header">TODO</h1></center>
+    <img class="main_img" src="wok.jpg" alt="bg-image">
     <main id="head">
-        <img class="main_img" src="wok.jpg" alt="bg-image">
         <div class="title">
-            <h1 class="c_header">TODO</h1>
-            <h2 class="c_time"" id="time"></h2>
+            <h2 class="c_time" id="time"></h2>
             <form class="c_task_form" id="task_form">
                 <input type="text" id="add_task"  placeholder="Write a Task">
-                <input type="submit" id="sub_task" value="Add Task">
+                <input type="submit" id="sub_task" value="+">
             </form>
         </div>
-    </main>
+    
 
-    <section id="mid">
-        <h2 class="all_task">All Tasks</h2>
+
+        <center><h2 class="all_task">ALL TASKS</h2></center>
         <div id="todolist">
         <div class="entryDiv">
         <div class="data">
             <input type="text" class="inp" value="task zero" readonly>
         </div>
         <div class="btns">
-            <input type="checkbox">
-            <button class="edit">EDIT</button>
-            <button class="delete">DELETE</button>
+            <input class="btn" type="checkbox">
+            <button class="btn edit">EDIT</button>
+            <button class="btn delete">DELETE</button>
         </div>
         </div> 
         </div>
-    </section>
+
+</main>
     <script src="index.js"></script>
 </body>
 
