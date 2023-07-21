@@ -2,31 +2,14 @@
 {
     margin: 0%;
     padding: 0%;
+    font-size: 100%;
 }
 body
 {
     color: white;
     font-family: 'Wix Madefor Display', sans-serif;
-}
-#head
-{
-    width: 40%;
-    margin: 2% auto 0% auto;
-    text-align: center;
-}
-.main_img
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-     top: 0;
-     min-height: 780px;
-}
-.title
-{
-    font-family: 'Wix Madefor Display', sans-serif;
-    text-align: center;
+    background-color: rgb(196, 18, 57);
+    
 }
 .c_header
 {
@@ -35,6 +18,30 @@ body
     font-size: 4rem;
     margin-top: 3%;
     opacity: 0.9;
+    text-align: center;
+}
+#head
+{
+    width: 60vw;
+    margin: 2% auto 0% auto;
+    text-align: center;
+}
+.ver_img
+{
+    display: none;
+}
+.main_img
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+     top: 0;
+}
+.title
+{
+    font-family: 'Wix Madefor Display', sans-serif;
+    text-align: center;
 }
 .c_time
 {
@@ -43,26 +50,30 @@ body
     padding: 1% 0;
     opacity: 0.8;
 }
-
+.c_task_form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
 #add_task
 {
-    width: 30vw;
-    height: 3.6vh;
+    width: 70%;
+    height: 45px;
     font-size: 1.5rem;
     font-family: 'Wix Madefor Display', sans-serif;
-    margin-right: 10%;
     border: none;
     background-color: rgb(14, 42, 95);
-    padding: 1.5%;
     color: white;
     outline: none;
+    padding-left: 1%;
 }
 #sub_task
 {
-    height: 6vh;
-    width: 4.2vw;
-    right: 32%;
-    position: absolute;
+    height: 45px;
+    width:8%;
     font-size: 2.5rem;
     background-color: rgb(14, 42, 95);
     border: none;
@@ -81,54 +92,89 @@ body
     margin-bottom: 2%;
     font-family: 'Wix Madefor Display', sans-serif;
     letter-spacing: 5px;
+    font-size: 1.4rem;
+    text-align: center;
 }
-.inp
+#todolist
 {
-    margin-left: 7%;
-    width: 29vw;
-    height: 3.6vh;
-    background-color: rgb(14, 42, 95);
-    color: wheat;
-    padding: 1.5%;
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
+    width: 100%;   
+    margin: 0 auto;
 }
 .entryDiv
 {
-    display: flex;
+    width: 100%;
+    justify-content: center;
 }
-.btns
+.data
 {
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    width: 79%;
+    margin-left: 1%;
+    background-color: rgb(14, 42, 95);
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+.inp
+{
+    width: 85%;
+    height: 45px;
+    background-color: rgb(14, 42, 95);
+    color: wheat;
+    font-size: 1.5rem;
+    padding-left: 1%;
+    border: none;
 }
 .btn
 {
     background-color: rgb(14, 42, 95);
+    margin-right: 15px;   
     border: none;
-    padding: 0 5%;
-}
-.chck
-{
-    width:80%;
-    background-color: transparent;
-
+    font-size: 1rem;
+    font-weight: bolder;
 }
 .edit
 {
     font-weight: bolder;
-    letter-spacing: 1px;
     color: lawngreen;
 }
 .delete
 {
-    
-
-    font-weight: bolder;
-    letter-spacing: 1px;
-    color: rgb(252, 0, 76);
+    color: rgb(252, 59, 0); 
 }
 .cut
 {
     text-decoration: line-through;
+}
+@media (max-width:1177px) and (min-width:834px)
+{
+    *
+    {
+        font-size: 90%;
+    }
+    #head
+    {
+        width: 70vw;
+    }
+    
+}
+@media (max-width:834px)
+{
+     *
+    {
+        font-size:75%;
+    }
+    .ver_img
+    {
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+    }
+    #head
+    {
+        width:95vw
+    }
 }
